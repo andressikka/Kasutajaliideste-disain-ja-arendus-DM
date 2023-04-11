@@ -6,7 +6,7 @@
 .header-Container{
     width: 100%;
     height: 200px;
-    /*border: 2px solid black;*/
+    text-align: -webkit-center;
 }
 
 .header-1-row-container{
@@ -15,6 +15,11 @@
     /*border: 2px solid black;*/
     background-color: rgb(238,238,238);
     text-align: -webkit-center;
+}
+
+.header-2-row-container{
+    width: 1440px;
+    height: 120px;
 }
 
 .navbar{
@@ -186,3 +191,24 @@
     top: 0;
     left: 0;
 }
+
+.navbar-2{
+    display: inline-flex;
+}
+
+.navigation-services{
+    text-align: start;
+    margin-left: 50px;
+    margin-top: 20px;
+}
+
+.nav-item-2{
+    list-style-type: none;
+}
+
+b{
+    font-family: 'Lato', sans-serif;
+    font-weight: 900;
+}
+
+
