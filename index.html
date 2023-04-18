@@ -219,26 +219,180 @@
             <img src="https://www.tallinn-airport.ee/wp-content/uploads/2023/02/Lennujaam_sihtkohad_kaart_2023_kodulehele_800x486_EST.png"
                  alt="Flight map" srcset="">
         </div>
-        <div class="col ">
-            <div class="row">
-                <button type="button" class="destinationBtn">Vaata meie kõiki sihtkohti</button>
+        <div class="col main-col">
+            <div class="row main-button">
+                <button type="button" class="destinationBtn"><b>View all destinations</b></button>
             </div>
-            <div class="row">
-                <div class="col">
-                    REISITERMINALI
-                    INFO
+            <div class="row main-row">
+                <div class="col main-col-pnt">
+                    <span class="icon-dark">
+                        <span class="icon--info--dark"></span>
+                    </span>
+                    <span>
+                        <b>
+                            PASSENGER TERMINAL INFORMATION
+                        </b>
+                        <a class="main-col-refers-row">
+                            <p>info[at]tll.aero</p>
+                        </a>
+                    </span>
                 </div>
-                <div class="col">
-                    TALLINNASSE HILINENUD VÕI RIKUTUD PAGAS baggage@tll.aero
+                <div class="col main-col-pnt">
+                    <span class="icon-dark">
+                        <span class="icon--baggage--dark"></span>
+                    </span>
+                    <span>
+                        <b>
+                            DELAYED OR DAMAGED BAGGAGE TO TALLINN
+                        </b>
+                        <a class="main-col-refers-row">
+                            <p>baggage@tll.aero</p>
+                        </a>
+                    </span>
                 </div>
             </div>
         </div>
     </div>
 </div>
-<div class="main-page-cards">
-    <div class="container">
+
+
+<!--  Flights schedule part-->
+  <div class="flight-info-container">
+      <div class="flight-info">
+          <nav class="flight-variety-buttons">
+              <div class="nav-schedule-button" tabindex="1">
+                  <img class="flight-images" src="images/departures.svg">
+                  <a class="a-schedule-refer" href="#"><b>DEPARTURES</b></a>
+              </div>
+              <div class="nav-schedule-button" tabindex="2">
+                  <img  class="flight-images" src="images/arrivals.svg">
+                  <a class="a-schedule-refer" href="#"><b>ARRIVALS</b></a>
+              </div>
+              <div class="nav-schedule-button" tabindex="3">
+                  <span>
+                      <i class="fas fa-globe fa-2x fa-inverse flight-images"></i>
+                  </span>
+                <a class="a-schedule-refer schedule-destination-title" href="#"><b>DESTINATIONS</b></a>
+              </div>
+          </nav>
+              <div class="flight-info-tabel-container">
+                  <div class="flight-info-tabel">
+                      <table class="table">
+                          <thead>
+                          <tr>
+                              <th scope="col">TIME</th>
+                              <th scope="col">FLIGHT</th>
+                              <th scope="col">TO</th>
+                              <th scope="col">INFORMATION</th>
+                              <th scope="col">AIRLINE</th>
+                          </tr>
+                          </thead>
+                          <tbody>
+                          <tr>
+                              <th scope="">13:50</th>
+                              <td>LO 785</td>
+                              <td>Warsaw</td>
+                              <td>Arrived 13:41</td>
+                              <td>LOT</td>
+                          </tr>
+                          <tr>
+                              <th scope="row">14:40</th>
+                              <td>BT 313</td>
+                              <td>Riga</td>
+                              <td>Estimated 14:54</td>
+                              <td>AirBaltic</td>
+                          </tr>
+                          <tr>
+                              <th scope="row">14:50</th>
+                              <td>AY 1019</td>
+                              <td>Helsinki</td>
+                              <td>Estimated 14:33</td>
+                              <td>Finnair</td>
+                          </tr>
+                          <tr>
+                              <th scope="row">16:00</th>
+                              <td>SK 1744</td>
+                              <td colspan="2">Stockholm</td>
+                              <td>Scandinavian Airlines System (SAS)</td>
+                          </tr>
+                          <tr>
+                              <th scope="row">17:00</th>
+                              <td>AY 1023</td>
+                              <td colspan="2">Helsinki</td>
+                              <td>Finnair</td>
+                          </tr>
+                          <tr>
+                              <th scope="row">17:30</th>
+                              <td>FR 5604</td>
+                              <td colspan="2">Rome</td>
+                              <td>Ryanair</td>
+                          </tr>
+                          <tr>
+                              <th scope="row">17:40</th>
+                              <td>LH 882</td>
+                              <td colspan="2">Frankfurt</td>
+                              <td>Lufthansa</td>
+                          </tr>
+                          </tbody>
+                      </table>
+                  </div>
+                  <div class="show-all-flights">
+                      <button class="search-submit">See all</button>
+                  </div>
+              </div>
+          <div>
+              <nav>
+                  <ul class="flight-details">
+                      <li class="nav-flight-details-button dropdown-item">
+                          <span class="icon">
+                              <span class="icon--parking"></span>
+                          </span>
+                          <span class="flight-details-span-context"><b>Parking</b></span>
+                          <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" class="bi bi-arrow-right-short" viewBox="0 0 16 16">
+                              <path fill-rule="evenodd" d="M4 8a.5.5 0 0 1 .5-.5h5.793L8.146 5.354a.5.5 0 1 1 .708-.708l3 3a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708-.708L10.293 8.5H4.5A.5.5 0 0 1 4 8z"/>
+                          </svg>
+                      </li>
+                      <li class="nav-flight-details-button dropdown-item">
+                          <span class="icon">
+                              <span class="icon--accessibility"></span>
+                          </span>
+                          <span class="flight-details-span-context"><b>Passenger who Require <br> Additional Assistance</b></span>
+                          <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" class="bi bi-arrow-right-short" viewBox="0 0 16 16">
+                                <path fill-rule="evenodd" d="M4 8a.5.5 0 0 1 .5-.5h5.793L8.146 5.354a.5.5 0 1 1 .708-.708l3 3a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708-.708L10.293 8.5H4.5A.5.5 0 0 1 4 8z"/>
+                          </svg>
+                      </li>
+                      <li class="nav-flight-details-button dropdown-item">
+                          <span class="icon">
+                              <span class="icon--children"></span>
+                          </span>
+                          <span class="flight-details-span-context"><b>Travelling with Children</b></span>
+                          <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" class="bi bi-arrow-right-short" viewBox="0 0 16 16">
+                              <path fill-rule="evenodd" d="M4 8a.5.5 0 0 1 .5-.5h5.793L8.146 5.354a.5.5 0 1 1 .708-.708l3 3a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708-.708L10.293 8.5H4.5A.5.5 0 0 1 4 8z"/>
+                          </svg>
+                      </li>
+                      <li class="nav-flight-details-button dropdown-item">
+                          <span class="icon">
+                              <span class="icon--baggage"></span>
+                          </span>
+                          <span  class="flight-details-span-context">
+                              <b>Baggage</b>
+                          </span>
+                          <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" class="bi bi-arrow-right-short" viewBox="0 0 16 16">
+                              <path fill-rule="evenodd" d="M4 8a.5.5 0 0 1 .5-.5h5.793L8.146 5.354a.5.5 0 1 1 .708-.708l3 3a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708-.708L10.293 8.5H4.5A.5.5 0 0 1 4 8z"/>
+                          </svg>
+                      </li>
+                  </ul>
+              </nav>
+          </div>
+      </div>
+  </div>
+
+
+<!--  Flights schedule part end-->
+
+<div class="main-page-cards-container">
         <div class="d-flex">
-            <div class="card" style="width: 22rem;">
+            <div class="card">
                 <img src="https://www.tallinn-airport.ee/wp-content/uploads/2022/02/reisi_targalt_1790x525_1-1570x529-3-355x236.jpg"
                      class="card-img-top" alt="...">
                 <div class="card-body">
@@ -249,23 +403,23 @@
                         worldwide.</p>
                 </div>
                 <div class="container pb-3">
-                    <a href="#" class="btn airportBtn">Go somewhere</a>
+                        <button class="search-submit">More info</button>
                 </div>
             </div>
-            <div class="card" style="width: 22rem;">
+            <div class="card">
                 <img src="https://www.tallinn-airport.ee/wp-content/uploads/2020/09/CovPilt-1-355x236.jpg"
                      class="card-img-top" alt="...">
                 <div class="card-body">
-                    <h5 class="card-title">Card title</h5>
+                    <h5 class="card-title">Safe travelling</h5>
                     <p class="card-text">In connection with the COVID-19 coronavirus, the priority of the Tallinn
                         Airport is
                         protecting the health of passengers and employees.</p>
                 </div>
                 <div class="container pb-3">
-                    <a href="#" class="btn airportBtn">Go somewhere</a>
+                    <button class="search-submit">More info</button>
                 </div>
             </div>
-            <div class="card" style="width: 22rem;">
+            <div class="card">
                 <img src="https://www.tallinn-airport.ee/wp-content/uploads/2020/09/Lounge-1-355x236.jpg"
                      class="card-img-top" alt="...">
                 <div class="card-body">
@@ -274,10 +428,10 @@
                         Lounge.</p>
                 </div>
                 <div class="container pb-3">
-                    <a href="#" class="btn airportBtn">Go somewhere</a>
+                    <button class="search-submit">More info</button>
                 </div>
             </div>
-            <div class="card" style="width: 22rem;">
+            <div class="card" >
                 <img src="https://www.tallinn-airport.ee/wp-content/uploads/2020/09/VIP-355x236.jpg"
                      class="card-img-top"
                      alt="...">
@@ -286,15 +440,83 @@
                     <p class="card-text">Begin your travels privately, in style and special.</p>
                 </div>
                 <div class="container pb-3">
-                    <a href="#" class="btn airportBtn">Go somewhere</a>
+                    <button class="search-submit">More info</button>
                 </div>
             </div>
         </div>
+</div>
+
+
+            <div class="container text-center news-container">
+                <!-- Stack the columns on mobile by making one full-width and the other half-width -->
+                <div class="row news-header-row">
+                    <div class="col-md-4 news-header-title">
+                        <b>News</b>
+                    </div>
+                    <div class="col-md-4 news-header-button">
+                        <button class="search-submit"> ⇨ All news</button>
+                    </div>
+                </div>
+
+                <!-- Columns start at 50% wide on mobile and bump up to 33.3% wide on desktop -->
+                <div class="row">
+                    <div class="col-6 col-md-4 news-content">
+                        <a class="news-content-a">From April 17 to May 31 the tram to the airport is out of operation</a>
+                        <br>
+                        <b class="news-date">14.04.2023</b>
+                    </div>
+                    <div class="col-6 col-md-4 news-content">
+                        <a class="news-content-a">March with the biggest passenger numbers at Tallinn Airport</a>
+                        <br>
+                        <b class="news-date">06.04.2023</b>
+                    </div>
+                    <div class="col-6 col-md-4 news-content">
+                        <a class="news-content-a">Green Forum of the transport sector takes place again</a>
+                        <br>
+                        <b class="news-date">05.04.2023</b>
+                    </div>
+                </div>
+            </div>
+
+
+
+  <div class="banner-container">
+      <div class="banner">
+          <img class="img-banner" src="images/Banner-peenike-kodulehe-all-1570x215_EN_logoga-.png">
+<!--          <img class="img-banner" src="images/Banner-kodulehele-veeb_WIZZ_1570x215px_english.jpg">-->
+      </div>
+  </div>
+
+<!--  <script>-->
+<!--      const photoContainer = document.querySelector('.banner');-->
+<!--      const photos = photoContainer.querySelectorAll('.img-banner');-->
+
+<!--      photoContainer.addEventListener('mousemove', (event) => {-->
+<!--          const x = event.clientX - photoContainer.offsetLeft;-->
+<!--          const y = event.clientY - photoContainer.offsetTop;-->
+
+<!--          photos[0].style.display = 'block';-->
+<!--          photos[0].style.left = `${x}px`;-->
+<!--          photos[0].style.top = `${y}px`;-->
+
+<!--          photos[1].style.display = 'none';-->
+<!--      });-->
+
+<!--      photoContainer.addEventListener('mouseleave', () => {-->
+<!--          photos[0].style.display = 'none';-->
+<!--          photos[1].style.display = 'block';-->
+<!--      });-->
+  </script>
+
+  <svg viewBox="0 0 1440 30" preserveAspectRatio="none" fill="none" xmlns="http://www.w3.org/2000/svg">
+      <path d="M720 22.6667C472 22.6667 231.333 14.6667 0 0V30H1440V0C1208.67 14.6667 967.333 22.6667 720 22.6667Z" fill="#1C2B39"></path>
+  </svg>
+<div class="footer-container">
+    <div class="footer">
+
     </div>
 </div>
-<div class="news">
 
-</div>
 
 </body>
 </html>
