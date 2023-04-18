@@ -156,14 +156,15 @@
     color: #fff;
     border: none;
     cursor: pointer;
+    transition: all 0.4s;
 }
-/*Todo*//*Todo*//*Todo*//*Todo*//*Todo*//*Todo*//*Todo*//*Todo*//*Todo*//*Todo*/
+.search-submit:hover{
+    transform: scale(1.05);
+}
+.search-close:hover{
+    transform: scale(1.05);
+}
 
-/*.search-submit:hover{*/
-/*    */
-/*}*/
-
-/*Todo*//*Todo*//*Todo*//*Todo*//*Todo*//*Todo*//*Todo*//*Todo*//*Todo*//*Todo*/
 .search-close{
     /*padding: 8px;*/
     margin-top: 12px;
@@ -174,6 +175,7 @@
     color: #fff;
     border: none;
     cursor: pointer;
+    transition: all 0.4s;
 }
 
 /* Отображаем всплывающую строку поиска при нажатии на кнопку поиска */
@@ -212,3 +214,395 @@ b{
 }
 
 
+/*<----------------------------------------NAVBAR ABOVE---------------------------------------->*/
+
+
+
+
+
+/*<----------------------------------------MAIN CONTENT BELOW---------------------------------------->*/
+
+.destinationBtn{
+    width: 236px;
+    height: 60px;
+    border-radius: 40px;
+    background: linear-gradient(90deg,#1c2b39,#2a4079 98.96%);
+    color: white;
+    font-size: 18px;
+    transition: all 0.4s;
+}
+.destinationBtn:hover{
+    transform: scale(1.05);
+}
+
+.main-col{
+    position: relative;
+}
+.main-row{
+    position: absolute;
+    bottom: 0;
+    margin-left: 10px;
+}
+.main-button{
+    margin-left: 25px;
+    margin-top: 70px;
+}
+.icon--info--dark{
+    background: url("images/info--dark.svg");
+    background-color: rgb(255,203,0.1);
+    background-repeat: no-repeat;
+    background-position: center;
+    border-radius: 10px;
+    display: flex;
+    width: 44px;
+    height: 60px;
+
+}
+.icon--baggage--dark{
+    background: url("images/baggage--dark.svg");
+    background-color: rgb(255,203,0.1);
+    background-repeat: no-repeat;
+    background-position: center;
+    border-radius: 10px;
+    display: flex;
+    width: 44px;
+    height: 60px;
+}
+
+.icon-dark{
+    margin-right: 20px;
+}
+
+.main-col-pnt{
+    display: flex;
+    font-size: 12px;
+}
+.main-col-refers-row{
+    text-decoration: none;
+    color: black;
+}
+
+.main-col-refers-row:hover{
+    color: #f57f20;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.flight-info-container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /*padding-bottom: 20px;*/
+    padding-top: 32px;
+}
+.flight-info{
+    width: 1440px;
+    height: 400px;
+    display: inline-flex;
+}
+.flight-variety-buttons{
+    width: 140px;
+    height: 400px;
+    text-align: -webkit-center;
+}
+.flight-info-tabel-container{
+    width: 940px;
+    height: 400px;
+    text-align: -webkit-center;
+    background: #1c2b39;
+}
+.table{
+    color: white;
+}
+
+/* Fix table head */
+/*.flight-info-tabel    { overflow: auto; height: 100px; }*/
+/*.flight-info-tabel th { position: sticky; top: 0; }*/
+
+/*!* Just common table stuff. *!*/
+/*table  { border-collapse: collapse; width: 100%; }*/
+/*th, td { padding: 8px 16px; }*/
+/*th     { background:#eee; }*/
+
+/*th {*/
+/*    position: sticky;*/
+/*    top: 0;*/
+/*    z-index: 2;*/
+/*}*/
+.flight-info-tabel{
+    width: 860px;
+    height: 240px;
+    margin-top: 30px;
+    margin-left: 30px;
+    margin-right: 30px;
+    margin-bottom: 20px;
+    display: block;
+    overflow-y: scroll;
+}
+/*thead, tbody { display: block; }*/
+/*tbody{*/
+/*    overflow-y: auto;    !* Trigger vertical scroll    *!*/
+/*    overflow-x: hidden;*/
+/*}*/
+
+.nav-schedule-button{
+    width: 140px;
+    height: 133.33px;
+    background: #223648;
+    border: 1px solid #1c2b39;
+    color: white;
+    display: inline-grid;
+    justify-items: center;
+}
+
+.nav-schedule-button:focus {
+    background-color:#f57f20;
+}
+
+.a-schedule-refer{
+    text-decoration: none;
+    color: white;
+}
+
+.flight-images{
+    margin-top: 36px;
+    margin-bottom: -30px;
+}
+
+.schedule-destination-title{
+    margin-bottom: 20px;
+}
+
+.nav-flight-details-button{
+    width: 360px;
+    height: 100px;
+    list-style-type: none;
+    background: #fff;
+    box-shadow: 0 0 100px rgba(0,0,0,.1);
+    display: inline-flex;
+    place-items: center
+}
+.nav-flight-details-button:hover b{
+        color: #f57f20;
+
+}
+
+.show-all-flights{
+    margin-left: -770px;
+}
+
+.flight-details{
+    padding: 0;
+
+}
+
+.icon--parking{
+    background: url("images/parking.svg");
+    background-color: #1770b8;
+    background-repeat: no-repeat;
+    background-position: center;
+    border-radius: 10px;
+    display: flex;
+    width: 60px;
+    height: 60px;
+}
+
+.icon--accessibility{
+    background: url("images/accessibility.svg");
+    background-repeat: no-repeat;
+    background-color: #f57f20;
+    background-position: center;
+    border-radius: 10px;
+    display: flex;
+    width: 60px;
+    height: 60px;
+}
+
+.icon--children{
+    background: url("images/children.svg");
+    background-repeat: no-repeat;
+    background-color: #f57f20;
+    background-position: center;
+    border-radius: 10px;
+    display: flex;
+    width: 60px;
+    height: 60px;
+}
+
+.icon--baggage{
+    background: url("images/baggage.svg");
+    background-repeat: no-repeat;
+    background-color: #f57f20;
+    background-position: center;
+    border-radius: 10px;
+    display: flex;
+    width: 60px;
+    height: 60px;
+}
+
+.icon{
+    margin-left: 20px;
+}
+
+.flight-details-span-context{
+    font-size: 20px;
+    margin-left: 20px;
+}
+
+/*-----------------------------------------------------MIAN PAGE CARDS-----------------------------------------------------------*/
+
+.main-page-cards-container{
+    /*width: 1440px;*/
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.d-flex{
+    width: 1440px;
+}
+.card{
+    width: 360px;
+    background: #fff;
+    box-shadow: 0 0 100px rgba(0,0,0,.2);
+}
+
+/*.news-container{*/
+/*    display: flex;*/
+/*    align-items: center;*/
+/*    justify-content: center;*/
+/*}*/
+/*.news{*/
+/*    width: 1340px;*/
+/*}*/
+
+/*.news-header{*/
+/*    display: flex;*/
+/*    justify-content: space-between;*/
+/*    margin-bottom: 30px;*/
+/*}*/
+
+body{
+    margin: 0 auto;
+}
+
+.news-container{
+    width: 1440px;
+    padding: 40px;
+    margin: 0 auto;
+    min-width: max-content;
+}
+
+.news-header-title{
+    font-size: 40px;
+    text-align: start;
+}
+.news-header-button{
+    align-self: end;
+    text-align: end;
+}
+
+/*.news-content-grid{*/
+/*    display: inline-flex;*/
+/*}*/
+
+.news-header-row{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 30px;
+}
+
+.news-date{
+    display: flex;
+}
+
+.news-content{
+    text-align-last: start;
+}
+
+.news-content-a{
+    display: flex;
+    text-align: start;
+    text-decoration: none;
+    color: black;
+}
+.news-content-a:hover{
+    color: #f57f20;
+    cursor: pointer;
+}
+
+
+/*------------------------------------------то что в комментах это попытка сделать слайд шоу из 2 фоток----------------------------------*/
+
+
+
+.banner-container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 40px;
+    /*width: 1360px;*/
+    /*height: 186px;*/
+    /*!*position: relative;*!*/
+    /*transform: translate(-50%,-50%);*/
+    /*top: 50%;*/
+    /*left: 50%;*/
+    /*overflow: hidden;*/
+    /*box-shadow: -1px 5px 15px black;*/
+}
+
+
+/*.banner{*/
+/*    width: 100%;*/
+/*    display: flex;*/
+/*    animation: slide 16s infinite;*/
+/*}*/
+
+/*.img-banner{*/
+/*    width: 50%;*/
+/*}*/
+
+/*@keyframes slide {*/
+/*    0% {*/
+/*        transform: translateX(0);*/
+/*    }*/
+/*    25% {*/
+/*        transform: translateX(0);*/
+/*    }*/
+/*    30% {*/
+/*        transform: translateX(-50%);*/
+/*    }*/
+/*    50% {*/
+/*        transform: translateX(-50%);*/
+/*    }*/
+/*    75% {*/
+/*        transform: translateX(-100%);*/
+/*    }*/
+/*    90% {*/
+/*        transform: translateX(-50%);*/
+/*    }*/
+/*    100% {*/
+/*        transform: translateX(0);*/
+/*    }*/
+/*}*/
+
+
+/*.banner {*/
+/*    position: relative;*/
+/*}*/
+
+/*.img-banner {*/
+/*    position: absolute;*/
+/*    top: 0;*/
+/*    left: 0;*/
+/*    display: none;*/
+/*}*/
+
+
+/*--------------------------------------------------popqtka...------------------------------------------------*/
+
+.footer-container{
+    background: #1c2b39;
+    width: 100%;
+    height: 120px;
+}
